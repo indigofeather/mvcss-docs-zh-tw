@@ -1,0 +1,8 @@
+/.bundle
+/bin
+/.sass-cache
+.DS_Store
+.ruby-version
+.ruby-gemset
+.idea
+build
