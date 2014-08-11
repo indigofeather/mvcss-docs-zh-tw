@@ -204,7 +204,7 @@ In the `card` example above, we've defined a modifier class that affects the `ca
 變數（Variables）
 ---------
 
-Variables are a big enough consideration that we dedicate an entire file to keeping them organized. You can find all the information regarding variables in [Config][config].
+變數是一個足夠大要考慮的事，我們致力於整個檔案來保持他們有組織。你可以在 [Config][config] 中找到所有關於變數的資訊。
 
 圖像（Images）
 ------

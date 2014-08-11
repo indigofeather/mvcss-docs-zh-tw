@@ -120,7 +120,7 @@ But that's a lot of classes to keep track of! Luckily, Sass can help us simplify
   margin-bottom: $b-space-l
 ```
 
-And now we apply only a *single set* of classes in the markup.
+現在我們只在標記中應用 *一套* 類別。
 
 ```html
 <div class="collection collection--1of3">
