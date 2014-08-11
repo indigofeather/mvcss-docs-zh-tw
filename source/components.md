@@ -7,9 +7,9 @@ priority: 14
 Components
 ==========
 
-The beginnings of a recognizable user interface live in the Components directory. These are abstract, reasonably portable modules that can be swapped in and out of different projects with relative ease.
+可識別的使用者界面一開始在 Components 目錄。這些是抽象的、合理的可移植模組，可以相對輕鬆地在不同專案之間被交換。
 
-Some Components, like `g` (grid) and `card`, are used for layout and containers, and can encompass many other modules.
+某些 Components，像 `g` (grid) 和 `card`，用於佈局和容器，而能包含許多其他模組。
 
 ```html
 <div class="g">
@@ -26,7 +26,7 @@ Some Components, like `g` (grid) and `card`, are used for layout and containers,
 </div>
 ```
 
-Other Components, like `thumb`, affect only a single element, and can resemble Tools at first glance. In these situations, both the Component and Tool have a single responsibility. The *Component*, however, may be declared alongside its modifier classes, while the Tool applies more definitive styles.
+其他 Components，像 `thumb`，只影響單一元素，而且第一眼看起來與 Tools 類似。在這些情況下，Component 和 Tool 都有單一職責。然而，*Component* 可能被宣告在其修飾符類別旁邊，而 Tool 應用更明確樣式。
 
 ```html
 <div class="bucket">
