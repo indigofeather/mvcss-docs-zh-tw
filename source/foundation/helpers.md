@@ -14,7 +14,7 @@ Helpers 是在整個 MVCSS 應用程式中被使用的函式、混入、擴充�
 函式（Functions）
 ---------
 
-Because of the many useful functions Sass gives us for free, we rarely need to define any of our own. Still, there may be occasions where you need to define some others (e.g., `em`, `rem`, `strip-units`). For these cases, we've dedicated the Functions section within Helpers to housing any necessary additions.
+由於 Sass 無償給我們許多有用的函式，我們幾乎不需要定義任何我們自己的。不過，可能有些情況下，你需要定義一些其他的（如 `em`、`rem`、`strip-units`）。對於這些情況，我們已經致力於 Helpers 中的 Functions 段落放置任何必要補充。
 
 混入（Mixins）
 ------

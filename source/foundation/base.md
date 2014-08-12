@@ -9,9 +9,9 @@ nested: true
 Foundation - Base
 =================
 
-Base contains all of the tag-level settings for default HTML elements. These are things like anchors, headings, paragraphs, lists, and everything else that doesn't have a class name attached. Because there are so many possible HTML elements to cover, we typically only style the ones relevant to a project as we need them.
+Base 包含所有針對預設 HTML 元素的 tag-level 設定。像是 anchors、headings、paragraphs、lists，以及其他沒有附加類別名稱的元素。因為涵蓋太多可能的 HTML 元素，我們通常只對專案中我們需要的相關元素做樣式。
 
-我們在頂端定義 `html` 和 `body` 樣式，and then divide the remaining content into Block and Inline sections.
+我們在頂端定義 `html` 和 `body` 樣式，然後把剩下的內容分為 Block 和 Inline 段落。
 
 ```sass
 // *************************************
@@ -35,9 +35,9 @@ body
 區塊內容（Block Content）
 -------------
 
-Block content is made up of all the block-level elements needed in an MVCSS project. Typically, this section includes the aforementioned headings, paragraphs, lists, as well as figures, blockquotes, and more.
+Block 內容由一個 MVCSS 專案中所有需要的 block-level 的元素組成。通常，這個段落包括前述的 headings、paragraphs、lists、以及 figures、blockquotes 等。
 
-Collapsing margins, while an intentional feature of CSS, only add complexity when authoring style sheets, so we limit vertical margins on block-level elements to a [single-direction][csswizardry-margins].
+折疊 margins，一個 CSS 的刻意特色（intentional feature），在創作樣式表時只會增加複雜度，所以我們限制 block-level 元素的垂直 margins 為 [單一方向][csswizardry-margins]。
 
 ```sass
 // -------------------------------------
@@ -68,7 +68,7 @@ h4, .h4
 內嵌內容（Inline Content）
 --------------
 
-Inline content is made up of&mdash;you guessed it&mdash;inline elements. These include tags like `a`, `strong`, `em`, `code`, and any others that don't force a line break before and after themselves by default.
+Inline 內容是指－你猜對了－內嵌元素。這些包括標籤像 `a`、`strong`、`em`、`code` 和任何其他預設不強制在自身前後換行的元素。
 
 ```sass
 // -------------------------------------
