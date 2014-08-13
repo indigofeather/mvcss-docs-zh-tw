@@ -9,12 +9,12 @@ nested: true
 Foundation - Config
 ===================
 
-Config holds your `@font-face` font setup (if applicable), and all of your application-wide variables. We include a set by default, which is broken down into Base, Colors, and Fonts.
+Config 握有你的 `@font-face` 字體設置（如果適用的話），以及所有你的應用程式範圍（application-wide）變數。 我們預設引入一組被分解成 Base、Colors 和 Fonts 的配置。
 
 @Font-face
 ----------
 
-If serving font files from a known path (e.g. your server), we include Bourbon's `+font-face` [mixin][bourbon-mixin-fontface] to simplify the daunting syntax, and also list fallback files needed for browser compatibility.
+如果從一個已知路徑（如你的伺服器）供應字體檔案，我們引入 Bourbon 的 `+font-face` [mixin][bourbon-mixin-fontface] 來簡化令人畏懼的語法，並且也列出針對瀏覽器相容性所需的備用檔案。
 
 ```sass
 // -------------------------------------
@@ -28,7 +28,7 @@ If serving font files from a known path (e.g. your server), we include Bourbon's
 +font-face('OpenSans', 'OpenSansItalic', normal, italic)
 ```
 
-**註：** if you use a web font provider that offers fonts exclusively via a JavaScript snippet, you can expect to leave the `@font-face` section empty.
+**註：** 如果你使用一個網頁字體供應商專門提供透過 JavaScript 片段的字體，你可以期望讓 `@font-face` 段落留空。
 
 變數
 ---------
@@ -42,7 +42,7 @@ If serving font files from a known path (e.g. your server), we include Bourbon's
 - `$componentName-*` 給 Components
 - `$structureName-*` 給 Structures
 
-Colors are a somewhat complicated issue, but we've had the most success defining an initial palette (without color prefixes), and then referencing those colors within other varibles. In projects with a limited set of colors, you may not need a palette section, so we encourage you to choose the approach you prefer.
+顏色是一個有點複雜的問題，但我們已經有最成功的方式，定義一個初始化調色盤（沒有顏色前綴）,然後在其他變數中參照那些顏色。在有限顏色的專案中，你可能不需要一個調色盤段落，所以我們建議你選擇你喜歡的方式。
 
 ```sass
 // -------------------------------------
