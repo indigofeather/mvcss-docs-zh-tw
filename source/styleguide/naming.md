@@ -16,14 +16,14 @@ nested: true
 
 As you may notice in `_tools.sass`, many of the Tool classes look pretty acronym-y. We’ll get into the gains inherent with defining Tools shortly, but for now just assume two- or three-letter classes fall under this notion.
 
-A class such as `.mbm` is a shorthand way to define a basic unit of bottom margin: **m**argin **b**ottom **m**edium. Similarly, `.mbl` would be the large variety of bottom margin.
+一個類別例如 `.mbm` 是一個定義 bottom margin 基本單位的縮寫法：**m**argin **b**ottom **m**edium。同樣地，`.mbl` 會是 large 種類的 bottom margin。
 
 組件／結構（Components/Structures）
 ---------------------
 
-Structures and Components exist as Sass partials in their respective directories, and are always singular. Examples include `icon`, `button`, `g` (grid), `form`, and `modal`.
+Structures 和 Components 如同 Sass 局部模板存在他們各自的目錄中，而且始終是單數。範例包括 `icon`、`button`、`g` (grid)、`form` 和 `modal`。
 
-If the name comprises two words, utilize `camelCase`&mdash;for instance, `taskList`.
+如果名稱包含兩個單詞，利用 `camelCase`－例如 `taskList`。
 
 修飾符（Modifiers）
 ---------
@@ -79,7 +79,7 @@ After creation, elements that need a modifier will use the root class (`.btn`) a
 狀態（States）
 ------
 
-Generally added via JavaScript, states are similar to modifiers but carry conditional context. `is-` denotes a state, such as `is-active`, and they’re utilized as such:
+通常是透過 JavaScript 添加，狀態類似於修飾符但具有條件的情境。`is-` 表示是一個狀態，例如 `is-active`，可以像這樣利用：
 
 ```sass
 // *************************************
@@ -102,14 +102,14 @@ Generally added via JavaScript, states are similar to modifiers but carry condit
   background: $c-highlight
 ```
 
-We use `is-active` as a convention throughout MVCSS, but any state can affect any module in a unique way. For example, applying `is-active` on an `btn` may have a completely different effect from applying `is-active` on a `nav-item`. By using only compound selectors (`.module.is-state`) to define state, we're able to increase specificity when needed, while also containing any changes within a single module's namespace.
+在整個 MVCSS 中我們使用 `is-active` 做為一個慣例，但任何狀態能夠以獨特的方式影響任何模組。例如，在一個 `btn` 應用 `is-active` 與在一個 `nav-item` 應用 `is-active` 可能有完全不同的效果。只透過使用複合選擇器（`.module.is-state`）來定義狀態，我們可以在需要時增加特異性，同時也包含在單一模組的命名空間內的任何變更。
 
 情境（Context）
 -------
 
-We also borrow the idea of context from SUIT. Modularizing styles into self-contained units works well *most* of the time, but you’ll occasionally need a parent element to fall in line.
+我們也從 SUIT 借用情境的想法。模組化樣式成為完備的單位在 *大多數* 的時候運作良好，但你有時會需要一個父元素來排入隊伍。
 
-The most common case tends to be positioning context. If you have a dropdown structure that’s being positioned absolutely, the parent element should be (at least) positioned relatively:
+最常見的情況趨向於定位情境。如果你有一個 dropdown 結構，而它是絕對定位，父元素應該（至少）是相對定位：
 
 ```sass
 // *************************************
@@ -132,7 +132,7 @@ The most common case tends to be positioning context. If you have a dropdown str
   position: relative
 ```
 
-Similar to `is-` with states, classes beginning with `has-` denote a context selector.
+類似於狀態有 `is-`，類別以 `has-` 開頭表示是一個情境選擇器。
 
 鷹架（Scaffolding）
 -----------
