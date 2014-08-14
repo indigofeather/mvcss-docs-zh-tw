@@ -18,9 +18,9 @@ Structures 是一個專案中專門用於跨站使用的模組和使用者界面
 作用範圍大小
 -------------
 
-When a module affects different aspects of an element or arrangement of elements simultaneously (i.e., it has a wide *scope*), that's a very strong indicator that you're dealing with a Structure.
+當一個模組同時影響一個元素或元素佈置的不同方面（也就是說，它 *作用範圍* 很廣）這就是你正在處理 Structure 的一個非常強烈的指標。
 
-Let's say, for example, you're designing a fairly common site header: logo on the left, plus some horizontal navigation on the right. You could realistically build this pattern using a combination of Helpers, Components, and Tools.
+比方說，例如你正在設計一個相當常見的網站 header：logo 在左邊，再加上一些水平導覽列在右邊。你可以使用一個 Helpers、Components 和 Tools 的組合來實際建立這個模式。
 
 ```html
 <header class="group">
@@ -35,20 +35,20 @@ Let's say, for example, you're designing a fairly common site header: logo on th
 </header>
 ```
 
-But what happens when we try to make our site responsive? On small-screen devices, we want our navigation to also:
+但當我們試著讓我們的網站響應會發生什麼事？在小螢幕裝置上，我們也想要我們的導覽列：
 
-- Fill the viewport width
-- Stack links atop one another
-- Apply an alternating background color to each list item
+- 填入 viewport 寬度
+- Stack 彼此鍊結在一起
+- 應用一個交替背景色到每個清單項目
 
-See the problem? Our module definitely isn't `list--inline` anymore. It now needs its own aesthetics and responsive behavior&mdash;both of which are tailored to their surrounding design. Although we might use this pattern in multiple places on the site, its broad scope makes copying it across different designs unlikely. In this case, our best bet is to create a new Structure, and define our new themed, responsive list module inside.
+看到問題了？我們的模組肯定不再是 `list--inline`。它現在需要它自己的美學和響應行為－這兩者都是針對其周圍的設計。雖然我們可能在網站中的多個地方使用此模式，其作用範圍之廣，使得在不同的設計中複製它不太可能。在這種情況下，我們最好的辦法是建立一個新的 Structure，並且在裡面定義我們的新主題、響應清單模組。
 
 依賴關係
 ------------
 
 不像 Components，Structures 可以依賴，或甚至擴充，已存在的 Components。這在你想要添加主題或行為到一個 Component 時是很有用的，但請保持任何包含在他們自身模組中的獨特變更。
 
-在 MVCSS，我們主要使用 `g` (grid) Component 在頁面佈局（page layout）。We try to keep it simple and assume as little as possible, but there are cases where we want to include similar functionality inside of a more specific module. Float-based grids don't always behave predictably when their items have variable a height, so we've defined a `collection` Structure to add contextual clearfixing.
+在 MVCSS，我們主要使用 `g` (grid) Component 在頁面佈局。我們試著保持簡單並且盡可能少假設，但有些情況下，我們想在更特別的模組內引入類似功能。浮動為底的網格始終無法在他們的項目有可變高度時預設行為，所以我們已經定義一個 `collection` Structure 來添加語境的清除修正。
 
 ```sass
 .collection
@@ -72,9 +72,9 @@ See the problem? Our module definitely isn't `list--inline` anymore. It now need
   margin-bottom: $b-space-l
 ```
 
-Using both the `g` (grid) Component and the `collection` Structure, we can apply both modules' classes directly in the markup.
+同時使用 `g` (grid) Component 和 `collection` Structure，我們可以直接在標記中同時應用模組的類別。
 
-**註：** applying multiple modifiers to `grid` and `grid-box` can make markup difficult to read quickly, so we've shortened the classes to `g` and `g-b`.
+**註：** 應用多個修飾符到 `grid` 和 `grid-box` 會讓標記難以快速閱讀，所以我們已經縮寫類別為 `g` 和 `g-b`。
 
 ```html
 <div class="g collection collection--1of3">
@@ -93,7 +93,7 @@ Using both the `g` (grid) Component and the `collection` Structure, we can apply
 </div>
 ```
 
-But that's a lot of classes to keep track of! Luckily, Sass can help us simplify our markup thanks to its `@extend` directive.
+但這樣有太多類別來保持聯繫！幸運的是，Sass 可以幫助我們簡化我們的標記，多虧有 `@extend` 指令。
 
 ```sass
 .collection
@@ -120,7 +120,7 @@ But that's a lot of classes to keep track of! Luckily, Sass can help us simplify
   margin-bottom: $b-space-l
 ```
 
-現在我們只在標記中應用 *一套* 類別。
+現在我們只在標記中應用 *一組* 類別。
 
 ```html
 <div class="collection collection--1of3">
@@ -142,4 +142,4 @@ But that's a lot of classes to keep track of! Luckily, Sass can help us simplify
 可移植性
 -----------
 
-In the end, limiting scope and minimizing dependencies both affect *portability*, which is usually our biggest concern when classifying modules. If you can easily tweak a few lines of CSS inside a module and use it between projects, that means it's reasonably portable, and you have solid grounds for classifying it as a Component. On the other hand, if try to port a module and find yourself rewriting a significant amount of code, then the module is likely better classified as a Structure.
+最後，限制作用範圍和最小化依賴性都影響 *可移植性*，它通常是我們在進行模組分類時最關心的問題。如果你可以輕易調整一些在模組中的幾行 CSS，並且在專案之間使用它，這意味著它是可合理移植的，你就有堅實的理由將它分類為一個 Component。另一方面，如果試著移植一個模組，並發現你自己撰寫相當數量的程式碼，那麼該模組分類為一個 Structure 可能會更好。
