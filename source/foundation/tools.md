@@ -9,9 +9,9 @@ nested: true
 Foundation - Tools
 ==================
 
-Tools are presentational utility classes for usage directly in the markup itself. They're helpful when you need a specific style in a unique context, but can't justify creating (and naming) a new module or modifier to achieve the desired effect.
+Tools 是直接用在標記自身的表象實用工具類別。他們在你需要一個獨特情境下的特定樣式時很有用，但不能成為建立（並命名）一個新模組或修飾符來達到預期效果的正當理由。
 
-例如，the paragraph element inside of the following `card` Component needs its `margin-bottom` made flush, so we can easily apply a Tool class of `mbf`.
+例如，下面 `card` Component 中的段落元素需要 `margin-bottom` 對齊，所以我們可以輕鬆應用一個 Tool 的 `mbf` 類別。
 
 ```html
 <div class="card">
@@ -19,12 +19,12 @@ Tools are presentational utility classes for usage directly in the markup itself
 </div>
 ```
 
-Using a Tool in this situation helps us avoid declaring a `card` or `card` modifier that assumes too much about its use case, while also helping to keep CSS specificity flat and managable.
+在這個情況下使用一個 Tool 有助於我們避免宣告一個 `card` 或 `card` 修飾符來承擔過多關於它的使用情況，同時也有助於保持平坦的 CSS 特異性，易於管理。
 
 單一職責
 ---------------------
 
-Tools are as limited in responsibility as possible, allowing you to mix and match various classes to quickly produce many different styles. Every Tool does one thing and one thing well, ensuring that the elements they affect stay both predictable and extensible.
+Tools 盡可能限制職責，允許你混合和搭配各種類別來快速產生更多不同樣式。每一個 Tool 做一件事，並且做好，確保他們影響的這些元素是可預測的和可擴充的。
 
 太超過
 -------------
@@ -36,7 +36,7 @@ Tools are as limited in responsibility as possible, allowing you to mix and matc
 <a class="btn pbm pll prl ptm tsl" href="v2.zip" >Download v2.4.1</a>
 ```
 
-在以上的範例中，我們試著只透過工具建立一個大按鈕。While our approach achieves the intended effect, we're much better off defining those common styles in a `.btn--l` class, 然後在標記中應用它。
+在以上的範例中，我們試著只透過工具建立一個大按鈕。雖然我們的方式達到預期效果，我們定義那些共同樣式在一個 `.btn--l` 類別中會好很多，然後在標記中應用它。
 
 ```sass
 .btn--l
@@ -49,4 +49,4 @@ Tools are as limited in responsibility as possible, allowing you to mix and matc
 <a class="btn btn--l" href="v2.zip" >Download v2.4.1</a>
 ```
 
-This second approach also gives us a styling hook for any future changes to `btn--l`. Tools provide a powerful set of classes for fine-tuning unique contextual styles, but they aren't a replacement for modular CSS practices.
+這個第二種方式也給我們一個針對 `btn--l` 任何未來變更上樣式的鉤子。Tools 提供一組強大的類別對獨特語境樣式進行改善調整，但他們不是模組化 CSS 做法的替代品。

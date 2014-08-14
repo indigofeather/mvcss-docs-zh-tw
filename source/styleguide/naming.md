@@ -14,7 +14,7 @@ nested: true
 工具（Tools）
 -----
 
-As you may notice in `_tools.sass`, many of the Tool classes look pretty acronym-y. We’ll get into the gains inherent with defining Tools shortly, but for now just assume two- or three-letter classes fall under this notion.
+正如你可能在 `_tools.sass` 注意到，很多 Tool 類別看起來是漂亮的首字母略縮詞。簡要定義 Tools 可以讓我們得到固有好處，但現在只是假設兩個或三個字母的類別屬於這個概念。
 
 一個類別例如 `.mbm` 是一個定義 bottom margin 基本單位的縮寫法：**m**argin **b**ottom **m**edium。同樣地，`.mbl` 會是 large 種類的 bottom margin。
 
@@ -28,7 +28,7 @@ Structures 和 Components 如同 Sass 局部模板存在他們各自的目錄中
 修飾符（Modifiers）
 ---------
 
-After defining the base properties of a Component or Structure, modifiers exist to allow stylistic tweaks that build on the initial definition.  These tweaks are denoted with two hyphens `--`. A button, for instance, might have a number of different colors and sizes:
+在定義過一個 Component 或 Structure 的基礎屬性之後，修飾符的存在允許建立在初始定義上的風格調整。這些調整以兩個連字符 `--` 表示。例如，一個按鈕可能有一些不同的顏色和大小。
 
 ```sass
 // *************************************
@@ -68,13 +68,13 @@ After defining the base properties of a Component or Structure, modifiers exist 
   background: $c-highlight
 ```
 
-After creation, elements that need a modifier will use the root class (`.btn`) and any number of modifiers deemed necessary:
+在建立之後，需要修飾符的元素會使用 root 類別（`.btn`） 以及任何被認為有必要的修飾符：
 
 ```html
 <button class="btn btn--a btn--l">A Button</button>
 ```
 
-**註：** modifiers typically work best when defined in hierarchical sequence (`a`, `b`) or via function (`cancel`, `submit`) as opposed to look (`red`, `blue`).
+**註：** 修飾符通常在層次順序（`a`、`b`）定義，或透過函式（`cancel`、`submit`）時發揮最好，而不是（`red`、`blue`）。
 
 狀態（States）
 ------
@@ -137,7 +137,7 @@ After creation, elements that need a modifier will use the root class (`.btn`) a
 鷹架（Scaffolding）
 -----------
 
-Elements nested within a Component or Structure that need styling *based on being there* can be added to the scaffolding. Keeping with the dropdown Structure, the scaffold section falls last:
+Component 或 Structure 中需要 *根據在哪裡* 上樣式的巢狀元素可以被添加到鷹架。鷹架段落跟著 dropdown Structure 排在最後：
 
 ```sass
 // *************************************
@@ -160,7 +160,7 @@ Elements nested within a Component or Structure that need styling *based on bein
   border: 4px solid $c-invert
 ```
 
-For items in scaffolding, the Component/Structure name comes first, followed by a single hyphen and the subcomponent/substructure name (also in camelCase, if necessary). Where applicable, they can have their own modifiers, states, and subcomponents/substructures&mdash;more than two levels, though, typically means it’s time to refactor.
+對於鷹架中的項目，先是 Component/Structure 名稱，後面接著一個連字符和子元件／子結構名稱（如果必要的話，也是駝峰式）。在適用的情況，他們可以有自己的修飾符、狀態和子元件／子結構－多於兩層，雖然通常這意味著該是重構的時候。
 
 ```sass
 // *************************************
@@ -199,7 +199,7 @@ For items in scaffolding, the Component/Structure name comes first, followed by 
   margin-bottom: $b-space-l
 ```
 
-In the `card` example above, we've defined a modifier class that affects the `card-header` scaffolding item. Applying the class directly to the element descendent of `card` helps us insert additional space when needed, while also keeping CSS specificity low.
+在上面 `card` 的範例中，我們已經定義一個影響 `card-header` 鷹架項目的修飾符類別。直接應用該類別到 `card` 的後代元素幫助我們在需要時插入額外空間，同時也保持低 CSS 特異性。
 
 變數（Variables）
 ---------

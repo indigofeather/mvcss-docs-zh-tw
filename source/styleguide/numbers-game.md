@@ -11,7 +11,7 @@ nested: true
 
 我們盡可能堅持在可預測的規模中使用相對單位。基礎值通常儲存在 Config（我們會涵蓋在 [Foundation][foundation]），並從中提取。出於效率和標準化的目的，在 MVCSS 中，你會比平時更少定義數值。
 
-方法（Approach）
+方式（Approach）
 --------
 
 - 基礎字體大小（儲存在 Config）的像素值是設定在 root `html` 元素上，由此準備文字大小和一個 em 單位的相對值
