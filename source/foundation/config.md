@@ -37,7 +37,6 @@ Config 握有你的 `@font-face` 字體設置（如果適用的話），以及�
 
 - `$b-*` 給基礎變數
 - `$c-*` 給顏色
-- `$f-*` 給字型
 - `$g-*` 給斷點（breakpoints）
 - `$componentName-*` 給 Components
 - `$structureName-*` 給 Structures
