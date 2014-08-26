@@ -1,10 +1,10 @@
 ---
-title: 預覽
+title: 概觀
 type: page
 priority: 1
 ---
 
-預覽
+概觀
 ========
 
 **MVCSS** [Modular View CSS]（模組化檢視 CSS）是一個以 Sass 為底的 CSS 架構，用於建立可預測及可維護的應用程式樣式。
