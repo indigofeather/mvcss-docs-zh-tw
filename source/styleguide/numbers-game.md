@@ -19,7 +19,7 @@ nested: true
 - 間距（padding、margin 等）是已儲存基礎空間值的倍數，以 em 設定
 - 字體大小（除了 `html` 元素之外）以百分比值來定義，同時縮放元素的其他相對屬性
 
-這種設置應該是比較容易掌握，一旦我們碰到 Foundation 的 Config、Tools 和 Base 部份。
+一旦我們觸及 Foundation 的 Config、Tools 和 Base 部份，這種設置應該比較容易掌握。
 
 **註：** 像素值有時必須符合設計需求，特別是像偏移。大多數情況下，這些被認為是 [magic numbers][csswizardry-magic-numbers]，而且你應該盡可能避免使用他們。
 

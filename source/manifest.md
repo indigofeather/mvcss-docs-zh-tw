@@ -29,7 +29,7 @@ vendor/
 導入（Imports）
 -------
 
-在 Foundation 中發現的檔案按特定順序導入到資源配置中，而 Components 和 Structures 通常依字母順序引入：
+分布在 Foundation 中的檔案按特定順序導入到資源配置中，而 Components 和 Structures 通常依字母順序引入：
 
 ```sass
 // *************************************
