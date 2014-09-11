@@ -33,13 +33,13 @@ Config 握有你的 `@font-face` 字體設置（如果適用的話），以及�
 變數
 ---------
 
-所有在 MVCSS 中的變數是定義在 Config 中，並且帶有他們的角色或相應 Component/Structure 的前綴。
+在 MVCSS 中所有的變數是定義在 Config 裡，並且帶有他們的角色或相應 Component/Structure 的前綴。
 
-- `$b-*` 給基礎變數
-- `$c-*` 給顏色
-- `$g-*` 給斷點（breakpoints）
-- `$componentName-*` 給 Components
-- `$structureName-*` 給 Structures
+- `$b-*` 用於基礎變數
+- `$c-*` 用於顏色
+- `$g-*` 用於斷點（breakpoints）
+- `$componentName-*` 用於 Components
+- `$structureName-*` 用於 Structures
 
 顏色是一個有點複雜的問題，但我們已經有最成功的方式，定義一個初始化調色盤（沒有顏色前綴）,然後在其他變數中參照那些顏色。在有限顏色的專案中，你可能不需要一個調色盤段落，所以我們建議你選擇你喜歡的方式。
 

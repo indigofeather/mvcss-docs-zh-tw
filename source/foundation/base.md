@@ -35,9 +35,9 @@ body
 區塊內容（Block Content）
 -------------
 
-Block 內容由一個 MVCSS 專案中所有需要的 block-level 的元素組成。通常，這個段落包括前述的 headings、paragraphs、lists、以及 figures、blockquotes 等。
+在 MVCSS 專案中，區塊內容是由所有需要的 block-level 的元素組成。通常，這個段落包括前述的 headings、paragraphs、lists、以及 figures、blockquotes 等。
 
-折疊 margins，一個 CSS 的刻意特色（intentional feature），在創作樣式表時只會增加複雜度，所以我們限制 block-level 元素的垂直 margins 為 [單一方向][csswizardry-margins]。
+外邊距疊加（Collapsing margins），一個 CSS 的刻意特色（intentional feature），在編寫樣式表時只會增加複雜度，所以我們限制 block-level 元素的垂直 margins 為 [單一方向][csswizardry-margins]。
 
 ```sass
 // -------------------------------------
@@ -68,7 +68,7 @@ h4, .h4
 內嵌內容（Inline Content）
 --------------
 
-Inline 內容是指－你猜對了－內嵌元素。這些包括標籤像 `a`、`strong`、`em`、`code` 和任何其他預設不強制在自身前後換行的元素。
+內嵌內容是指－你猜對了－內嵌元素。這些包括標籤像 `a`、`strong`、`em`、`code` 和任何其他預設不強制在自身前後換行的元素。
 
 ```sass
 // -------------------------------------

@@ -14,21 +14,21 @@ nested: true
 工具（Tools）
 -----
 
-正如你可能在 `_tools.sass` 注意到，很多 Tool 類別看起來是漂亮的首字母略縮詞。簡要定義 Tools 可以讓我們得到固有好處，但現在只是假設兩個或三個字母的類別屬於這個概念。
+你可能注意到在 `_tools.sass` 裡，大部分的 Tool 類別看起來是首字母略縮詞。扼要地定義 Tools 可以為我們帶來好處，在這個概念下，採用兩個或三個字母的類別。
 
-一個類別例如 `.mbm` 是一個定義 bottom margin 基本單位的縮寫法：**m**argin **b**ottom **m**edium。同樣地，`.mbl` 會是 large 種類的 bottom margin。
+像是 `.mbm` 這樣的類別，是定義 bottom margin 基本單位的縮寫法：**m**argin **b**ottom **m**edium。同樣地，`.mbl` 會是 bottom margin 的 large 種類。
 
 組件／結構（Components/Structures）
 ---------------------
 
-Structures 和 Components 如同 Sass 局部模板存在他們各自的目錄中，而且始終是單數。範例包括 `icon`、`button`、`g` (grid)、`form` 和 `modal`。
+Structures 和 Components 如同 Sass 局部模板存在他們各自的目錄中，而且始終是單數命名。範例包括 `icon`、`button`、`g` (grid)、`form` 和 `modal`。
 
-如果名稱包含兩個單詞，利用 `camelCase`－例如 `taskList`。
+如果名稱包含兩個單詞，利用 `駝峰式命名（camelCase）`－例如 `taskList`。
 
 修飾符（Modifiers）
 ---------
 
-在定義過一個 Component 或 Structure 的基礎屬性之後，修飾符的存在允許建立在初始定義上的風格調整。這些調整以兩個連字符 `--` 表示。例如，一個按鈕可能有一些不同的顏色和大小。
+在定義過 Component 或 Structure 的基礎屬性之後，修飾符的存在允許建立在初始定義上的風格調整。這些調整以兩個連字符 `--` 表示。例如，一個按鈕可能有一些不同的顏色和大小。
 
 ```sass
 // *************************************
@@ -68,13 +68,13 @@ Structures 和 Components 如同 Sass 局部模板存在他們各自的目錄中
   background: $c-highlight
 ```
 
-在建立之後，需要修飾符的元素會使用 root 類別（`.btn`） 以及任何被認為有必要的修飾符：
+在建立之後，需要修飾符的元素會使用根類別（`.btn`） 以及任何被認為有必要的修飾符：
 
 ```html
 <button class="btn btn--a btn--l">A Button</button>
 ```
 
-**註：** 修飾符通常在層次順序（`a`、`b`）定義，或透過函式（`cancel`、`submit`）時發揮最好，而不是（`red`、`blue`）。
+**註：** 修飾符通常在分層序列（`a`、`b`）定義或透過功能（`cancel`、`submit`）時發揮最好，而不是使用外觀（`red`、`blue`）。
 
 狀態（States）
 ------
@@ -102,14 +102,14 @@ Structures 和 Components 如同 Sass 局部模板存在他們各自的目錄中
   background: $c-highlight
 ```
 
-在整個 MVCSS 中我們使用 `is-active` 做為一個慣例，但任何狀態能夠以獨特的方式影響任何模組。例如，在一個 `btn` 應用 `is-active` 與在一個 `nav-item` 應用 `is-active` 可能有完全不同的效果。只透過使用複合選擇器（`.module.is-state`）來定義狀態，我們可以在需要時增加特異性，同時也包含在單一模組的命名空間內的任何變更。
+在整個 MVCSS 中我們使用 `is-active` 做為一個慣例，但任何狀態能夠以獨特的方式影響任何模組。例如，在 `btn` 與在 `nav-item` 套用 `is-active` 可能有完全不同的效果。藉由只採用複合選擇器（`.module.is-state`）來定義狀態，使我們能夠在需要時增加特異性，同時也包含單一模組之命名空間內的任何變更。
 
 情境（Context）
 -------
 
-我們也從 SUIT 借用情境的想法。模組化樣式成為完備的單位在 *大多數* 的時候運作良好，但你有時會需要一個父元素來排入隊伍。
+我們也從 SUIT 借用情境的想法。把樣式模組化成為完備的單位在 *大多數* 的時候運作良好，但有時候你會需要一個父元素來加入組件。
 
-最常見的情況趨向於定位情境。如果你有一個 dropdown 結構，而它是絕對定位，父元素應該（至少）是相對定位：
+最常見的情況傾向於定位情境。如果你有一個 dropdown 結構，而它是絕對定位，父元素應該（至少）是相對定位：
 
 ```sass
 // *************************************
@@ -132,7 +132,7 @@ Structures 和 Components 如同 Sass 局部模板存在他們各自的目錄中
   position: relative
 ```
 
-類似於狀態有 `is-`，類別以 `has-` 開頭表示是一個情境選擇器。
+如同狀態加上 `is-`，情境選擇器以 `has-` 開頭表示。
 
 鷹架（Scaffolding）
 -----------
