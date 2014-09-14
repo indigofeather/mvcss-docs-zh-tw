@@ -211,10 +211,10 @@ Component 或 Structure 中需要 *根據在哪裡* 上樣式的巢狀元素可�
 
 關於命名圖像的段落？我明白，讓我們讀完它。
 
-- `bg-*` 給背景圖
-- `logo-*` 給 logo
-- `img-*` 給內容圖像
-- 子文件夾給更大的群組
+- `bg-*` 用於背景圖
+- `logo-*` 用於 logo
+- `img-*` 用於內容圖像
+- 子文件夾用於更大的群組
 
 
 [config]: /foundation/config
