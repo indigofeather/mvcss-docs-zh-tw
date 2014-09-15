@@ -7,7 +7,7 @@ priority: 14
 Components
 ==========
 
-可識別的使用者界面一開始放在 Components 目錄。這些是抽象的、合理的可移植模組，可以相對輕鬆地在不同專案之間被交換。
+可辨別 UI（recognizable user interface）的開端存在 Components 目錄中。這些是抽象的、合理的可移植模組，可以相對輕鬆地在不同專案之間被交換。
 
 某些 Components，像 `g` (grid) 和 `card`，用於佈局和容器，而能包含許多其他模組。
 
