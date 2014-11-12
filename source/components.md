@@ -26,6 +26,8 @@ Components
 </div>
 ```
 
+**註**：我們把 `grid` 和 `grid-box` 類別分別簡寫為 `g` 和 `g-b`。既然我們如此頻繁寫這些網格類別，我們想要盡可能精簡。然而，如果對你來說使用完整字詞更適合的話，請隨意。
+
 其他 Components，像 `thumb`，只影響單一元素，而且第一眼看起來與 Tools 類似。在這些情況下，Component 和 Tool 都有單一職責。然而，*Component* 可能被宣告在其修飾符類別旁邊，而 Tool 應用更明確樣式。
 
 ```html

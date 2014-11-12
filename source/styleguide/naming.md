@@ -76,6 +76,29 @@ Structures 和 Components 如同 Sass 局部模板存在他們各自的目錄中
 
 **註：** 修飾符通常在分層序列（`a`、`b`）定義或透過功能（`cancel`、`submit`）時發揮最好，而不是使用外觀（`red`、`blue`）。
 
+### 簡寫表示法（Shorthand Notation）
+
+正如你可以在上面看到，我們會對尺寸和層次修飾符使用簡寫表示法。例如，我們會寫 `btn--l`，而不是 `btn--large`。我們這樣做是為了簡潔，但如果對你和你的作者們來說，具體寫出更適合的話，請隨意。
+
+以下是我們使用在尺寸和層次的簡寫表示法修飾符慣例：
+
+```sass
+// Sizing
+--f  (flush)
+--xs (extra small)
+--s  (small)
+--m  (medium)
+--l  (large)
+--xl (extra large)
+
+// Hierarchy
+--a (primary)
+--b (secondary)
+--c (tertiary)
+```
+
+**註**：如果你在層級規模上超過三層，你可能需要不同的修飾符，因為你有過多等級的層次。
+
 狀態（States）
 ------
 
