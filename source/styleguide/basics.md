@@ -18,6 +18,7 @@ nested: true
 - 在 `:` 之後添加一個空格 
 - 在註解 `//` 之後添加一個空格
 - 在值中的逗號之後添加一個空格（如 `rgba(#000, 0.5)`）
+- 在數學運算符的結尾寫數字（如 `$b-space * 0.5`）
 - 堅持為類別而非 ID 上樣式
 - 盡可能限制巢狀結構
 
@@ -33,6 +34,7 @@ nested: true
   -ms-flex: 1 1 50%
   flex: 1 1 50%
   font-style: italic
+  padding-bottom: $b-space * 3
 ```
 
 標記（Markup）
