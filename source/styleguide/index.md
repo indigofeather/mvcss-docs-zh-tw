@@ -1,7 +1,6 @@
 ---
 title: 樣式指南
 type: page
-priority: 2
 children: true
 ---
 

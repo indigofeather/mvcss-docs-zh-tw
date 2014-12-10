@@ -1,7 +1,6 @@
 ---
 title: 關於
 type: page
-priority: 17
 secondary: true
 ---
 

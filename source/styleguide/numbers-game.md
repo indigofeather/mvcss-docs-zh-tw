@@ -1,7 +1,6 @@
 ---
 title: 數字遊戲
 type: page
-priority: 4
 parent: 樣式指南
 nested: true
 ---

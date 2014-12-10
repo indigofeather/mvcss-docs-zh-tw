@@ -1,7 +1,6 @@
 ---
 title: 註解
 type: page
-priority: 5
 parent: 樣式指南
 nested: true
 ---

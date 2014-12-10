@@ -1,7 +1,6 @@
 ---
 title: 資源
 type: page
-priority: 18
 secondary: true
 ---
 

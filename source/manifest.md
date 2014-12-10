@@ -1,7 +1,6 @@
 ---
 title: 資源配置
 type: page
-priority: 7
 ---
 
 資源配置

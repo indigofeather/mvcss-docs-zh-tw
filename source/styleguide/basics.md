@@ -1,7 +1,6 @@
 ---
 title: 基礎知識
 type: page
-priority: 3
 parent: 樣式指南
 nested: true
 ---

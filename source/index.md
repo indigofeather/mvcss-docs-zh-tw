@@ -1,7 +1,6 @@
 ---
 title: 概觀
 type: page
-priority: 1
 ---
 
 概觀

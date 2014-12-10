@@ -1,7 +1,6 @@
 ---
 title: 命名慣例
 type: page
-priority: 6
 parent: 樣式指南
 nested: true
 ---
