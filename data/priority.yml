@@ -1,16 +1,16 @@
 - 概觀
 - 樣式指南
-- 基礎知識
-- 數字遊戲
-- 註解
-- 命名慣例
+- 樣式指南 - 基礎知識
+- 樣式指南 - 數字遊戲
+- 樣式指南 - 註解
+- 樣式指南 - 命名慣例
 - 資源配置
 - Foundation
-- Reset
-- Helpers
-- Config
-- Base
-- Tools
+- Foundation - Reset
+- Foundation - Helpers
+- Foundation - Config
+- Foundation - Base
+- Foundation - Tools
 - Components
 - Structures
 - Vendor
