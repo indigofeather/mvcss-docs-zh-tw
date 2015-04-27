@@ -42,10 +42,10 @@ vendor/
 //   Foundation
 // -------------------------------------
 
-@import "foundation/reset"
-@import "foundation/helpers"
-@import "foundation/config"
-@import "foundation/base"
+@import 'foundation/reset'
+@import 'foundation/helpers'
+@import 'foundation/config'
+@import 'foundation/base'
 
 // -------------------------------------
 //   Components
@@ -69,11 +69,35 @@ vendor/
 //   Foundation - Tools
 // -------------------------------------
 
-@import "foundation/tools"
+@import 'foundation/tools'
 
 // -------------------------------------
 //   Inbox
 // -------------------------------------
+```
+
+### 拆分大檔案
+
+如果任何的 Foundation 檔案大於預期，將檔案拆成較小、獨立的檔案。例如，如果 Foundation - Config 檔案變得太大：
+
+1. 建立 `foundation/config` 目錄。
+2. 為 `foundation/_config.sass` 段落建立分段。
+3. Import 在 `foundation/_config.sass` 中的分段檔案。
+
+```sass
+// *************************************
+//
+//   Config
+//   -> Fonts, Variables
+//
+// *************************************
+
+@import 'foundation/config/fonts'
+@import 'foundation/config/colors'
+@import 'foundation/config/base'
+@import 'foundation/config/components'
+@import 'foundation/config/structures'
+// ...
 ```
 
 收件匣（Inbox）
