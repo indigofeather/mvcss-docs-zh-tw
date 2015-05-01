@@ -6,3 +6,10 @@
 .ruby-gemset
 .idea
 build
+node_modules
+source/assets/fonts
+*.html
+*.txt
+build.sh
+package.json
+gulpfile.js
