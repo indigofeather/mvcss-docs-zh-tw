@@ -17,7 +17,7 @@ nested: true
 
 像是 `.mbm` 這樣的類別，是定義 bottom margin 基本單位的縮寫法：**m**argin **b**ottom **m**edium。同樣地，`.mbl` 會是 bottom margin 的 large 種類。
 
-組件／結構（Components/Structures）
+元件／結構（Components/Structures）
 ---------------------
 
 Structures 和 Components 如同 Sass 局部模板存在他們各自的目錄中，而且始終是單數命名。範例包括 `icon`、`button`、`g` (grid)、`form` 和 `modal`。
@@ -129,7 +129,7 @@ Structures 和 Components 如同 Sass 局部模板存在他們各自的目錄中
 情境（Context）
 -------
 
-我們也從 SUIT 借用情境的想法。把樣式模組化成為完備的單位在 *大多數* 的時候運作良好，但有時候你會需要一個父元素來加入組件。
+我們也從 SUIT 借用情境的想法。把樣式模組化成為完備的單位在 *大多數* 的時候運作良好，但有時候你會需要一個父元素來加入元件。
 
 最常見的情況傾向於定位情境。如果你有一個 dropdown 結構，而它是絕對定位，父元素應該（至少）是相對定位：
 
