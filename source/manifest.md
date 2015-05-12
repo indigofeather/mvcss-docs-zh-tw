@@ -21,7 +21,7 @@ structures/
 vendor/
 ```
 
-`application.sass` 做為資源配置和收件匣（稍後詳述）。應用程式做為名稱是從 Rails 資產流水線所衍生，而其他檔案全都是導入的 Sass 局部模板。
+`application.sass` 做為資源配置和收件匣（稍後詳述）。應用程式做為名稱是從 Rails asset pipeline 所衍生，而其他檔案全都是導入的 Sass 局部模板。
 
 在編譯後，`application.css` 被包括在網站每一頁，且可以壓縮各種設定。
 

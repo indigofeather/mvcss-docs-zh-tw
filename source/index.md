@@ -8,9 +8,9 @@ type: page
 
 **MVCSS** [Modular View CSS]（模組化檢視 CSS）是一個以 Sass 為基礎的 CSS 架構，用於建立可預測與可維護的應用程式樣式。
 
-CSS，因其簡明性，在大規模實作中是一個難於管理的語言。命名、抽象路徑、結構和方法論都是自由形式；MVCSS 尋求為實作中的自由形式提供規範。
+CSS，因其簡明性，在大規模實作中是一個難以管理的語言。命名、抽象路徑、結構和方法論都是自由形式；MVCSS 尋求為實作中的自由形式提供規範。
 
-為了符合架構的主題，應用程式被分為主要三大類：[*Foundation*][foundation]、[*Components*][components] 和 [*Structures*][structures]。如果 Foundation 代表工具、材料和地平面，Components 等同於建立一扇窗，而 Structures 築起牆面來映出一些窗子和門。
+為了符合架構的主題，應用程式被分為主要三大類：[*Foundation*][foundation]、[*Components*][components] 和 [*Structures*][structures]。如果 Foundation 代表工具、材料和地平面，Components 等同於建立一扇窗，而 Structures 築起牆面來鏡像出一些窗子和門。
 
 要搶先體驗的話，這裡是粗略的 Component 可能的組成：
 
