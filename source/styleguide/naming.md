@@ -124,7 +124,7 @@ Structures 和 Components 如同 Sass 局部模板存在他們各自的目錄中
   background: $c-highlight
 ```
 
-在整個 MVCSS 中我們使用 `is-active` 做為一個慣例，但任何狀態能夠以獨特的方式影響任何模組。例如，在 `btn` 與在 `nav-item` 套用 `is-active` 可能有完全不同的效果。藉由只採用複合選擇器（`.module.is-state`）來定義狀態，使我們能夠在需要時增加特異性，同時也包含單一模組之命名空間內的任何變更。
+在整個 MVCSS 中我們使用 `is-active` 做為一個慣例，但任何狀態能夠以獨特的方式影響任何模組。例如，在 `btn` 與在 `nav-item` 套用 `is-active` 可能有完全不同的效果。藉由只採用複合選擇器（`.module.is-state`）來定義狀態，使我們能夠在需要時增加優先權，同時也包含單一模組之命名空間內的任何變更。
 
 情境（Context）
 -------
@@ -221,7 +221,7 @@ Component 或 Structure 中需要 *根據在哪裡* 上樣式的巢狀元素可�
   margin-bottom: $b-space-l
 ```
 
-在上面 `card` 的範例中，我們已經定義一個影響 `card-header` 鷹架項目的修飾符類別。直接應用該類別到 `card` 的後代元素幫助我們在需要時插入額外空間，同時也保持低 CSS 特異性。
+在上面 `card` 的範例中，我們已經定義一個影響 `card-header` 鷹架項目的修飾符類別。直接應用該類別到 `card` 的後代元素幫助我們在需要時插入額外空間，同時也保持低 CSS 優先權。
 
 變數（Variables）
 ---------
