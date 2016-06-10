@@ -120,7 +120,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  middleman
+  middleman (~> 3.0)
   middleman-livereload
   middleman-minify-html
   middleman-syntax
